@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Views.GoalsActivity">
+
+    <LinearLayout
+        android:id="@+id/liParent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbarcolor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/menuImage"
+            android:layout_marginLeft="@dimen/layout_margin_15"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/notonserif_bold"
+            android:gravity="center"
+            android:paddingRight="@dimen/layout_margin_30"
+            android:text="@string/Goals"
+            android:textColor="@color/white"
+            android:textSize="@dimen/layout_margin_20">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/layout_margin_10"
+
+        android:layout_marginBottom="55dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginRight="@dimen/layout_margin_10"
+        android:layout_marginLeft="@dimen/layout_margin_10"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_margin="@dimen/layout_margin_5"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/layout_margin_5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin_15"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="@dimen/layout_margin_5"
+                        android:clickable="true"
+                        android:layout_marginLeft="@dimen/layout_margin_15"
+                        app:cardBackgroundColor="#0298f2"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="5dp">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/roadsides">
+
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:paddingLeft="@dimen/layout_margin_15"
+                        android:text="Goals Running!"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin_30"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="@dimen/layout_margin_15"
+                            android:layout_gravity="center"
+                            android:src="@drawable/night">
+
+                        </ImageView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:paddingLeft="@dimen/layout_margin_15"
+                        android:text="Good Evening"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin_15"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:layout_height="wrap_content"
+                        android:text="Daily Incentives">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:layout_marginTop="@dimen/layout_margin_15"
+                        android:layout_height="wrap_content"
+                        android:text="3.0 Task to complete the challenge and earn thr First Incentive">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/layout_margin_15"
+                        android:layout_height="@dimen/layout_margin_20" >
+
+                        <SeekBar
+                            android:id="@+id/seekBarthird"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_margin_20"
+                            android:max="10"
+                            android:thumb="@color/float_transparent"
+                            android:progressDrawable="@layout/layout_progress_seekbar"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:text="5"
+                            android:gravity="center"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/layout_margin_15"
+                        android:layout_marginLeft="@dimen/layout_margin_20"
+                        android:layout_marginRight="@dimen/layout_margin_20"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/layout_margin_20" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lock">
+
+                        </ImageView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/tab_indicator_gray"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/openlock">
+
+                        </ImageView>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/tab_indicator_gray"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lock">
+
+                        </ImageView>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/tab_indicator_gray"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lock">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/layout_margin_10"
+                        android:layout_marginRight="@dimen/layout_margin_10"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/layout_margin_20" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Rs 0">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:max="10"
+                            android:progress="7"
+                            android:secondaryProgress="7" />
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs 50">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs 100">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs 100">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/layout_margin_10"
+                        android:layout_marginRight="@dimen/layout_margin_10"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/layout_margin_20" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="          ">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+                        <ImageView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/starss"
+                            android:layout_height="wrap_content"
+                           >
+
+                        </ImageView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/star"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </ImageView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+                        <ImageView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/starss"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </ImageView>
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/layout_margin_20"
+                        android:background="@color/tab_indicator_gray"
+                        android:layout_height="1dp">
+
+                    </View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:layout_marginTop="@dimen/layout_margin_20"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:layout_height="wrap_content"
+                        android:text="Consistency through the week">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:layout_marginTop="@dimen/layout_margin_15"
+                        android:layout_height="wrap_content"
+                        android:text="27.0 Task more to complete the challenge and unlock the incentive">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/layout_margin_15"
+                        android:layout_height="@dimen/layout_margin_20" >
+
+                        <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_margin_20"
+                            android:max="10"
+                            android:thumb="@color/float_transparent"
+                            android:progressDrawable="@layout/layout_progress_seekbar"
+                            android:secondaryProgress="4"
+                            android:progress="5" />
+
+                        <TextView
+                            android:text="21"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/gradient_start_color"
+                            android:layout_width="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/layout_margin_15"
+                        android:layout_marginLeft="@dimen/layout_margin_20"
+                        android:layout_marginRight="@dimen/layout_margin_20"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/layout_margin_20" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lock">
+
+                        </ImageView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/tab_indicator_gray"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lock">
+
+                        </ImageView>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/tab_indicator_gray"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lock">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/layout_margin_10"
+                        android:layout_marginRight="@dimen/layout_margin_10"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/layout_margin_20" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Rs 0">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs 300">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs 500">
+
+                        </TextView>
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/layout_margin_10"
+                        android:layout_marginRight="@dimen/layout_margin_10"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/layout_margin_20" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="          ">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+                        <ImageView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/star"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </ImageView>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="2dp"
+                            android:max="10"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:secondaryProgress="7"
+                            android:progress="7" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/starss"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </ImageView>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1001300826497",
+    "project_id": "emigos-8eab5",
+    "storage_bucket": "emigos-8eab5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001300826497:android:7cb6f3678bda7f897f3080",
+        "android_client_info": {
+          "package_name": "com.amigos.amigos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001300826497-oukphetr7kkmln4o2tqjbga8bvkvl860.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgtaBTVZWiAZJGNsArLwQGYjGEGUR9KI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001300826497-oukphetr7kkmln4o2tqjbga8bvkvl860.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

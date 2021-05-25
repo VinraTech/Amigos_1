@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:id="@+id/parentscroll"
+    android:layout_height="fill_parent"
+    android:background="@drawable/amigoback"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Views.LoginPageActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/layout_margin_40"
+            android:background="@drawable/loginbackgroundradius"
+            android:layout_height="200dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:src="@drawable/amigosnew"
+                android:layout_marginTop="@dimen/layout_margin_15"
+                android:layout_height="150dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="@dimen/layout_margin_10"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pinbackground"
+                android:fontFamily="@font/notoserif_regular"
+                android:hint="Enter mobile number"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/layout_margin_15"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/layout_margin_15"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="@dimen/layout_margin_10"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pinbackground"
+                android:digits=".0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                android:hint="Password"
+                android:inputType="text"
+                android:textSize="@dimen/layout_margin_15"
+                android:fontFamily="@font/notoserif_regular"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liForgot"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginTop="@dimen/layout_margin_5"
+            android:layout_marginRight="@dimen/layout_margin_20"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="@dimen/layout_margin_5"
+                android:text="@string/forgotpassword"
+                android:fontFamily="@font/notoserif_regular"
+                android:textColor="@color/intro_title_color"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/layout_margin_15"
+            android:fontFamily="@font/notoserif_regular"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="@dimen/layout_margin_10"
+            android:background="@drawable/buttonbackground"
+            android:gravity="center"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/colorAccent">
+
+            </View>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="OR"
+                android:textColor="@color/intro_title_color">
+
+            </TextView>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/colorAccent">
+
+            </View>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/layout_margin_15"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="@dimen/layout_margin_10"
+            android:background="@drawable/facebackbtn"
+            android:fontFamily="@font/notoserif_regular"
+            android:gravity="center"
+            android:text="Facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/layout_margin_15"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="@dimen/layout_margin_10"
+            android:background="@drawable/googlebackbtn"
+            android:fontFamily="@font/notoserif_regular"
+            android:gravity="center"
+            android:text="Google"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <LinearLayout
+            android:id="@+id/liRegistration"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/layout_margin_15"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notoserif_regular"
+                android:gravity="center"
+                android:paddingRight="@dimen/layout_margin_5"
+                android:text="@string/newuser"
+                android:textColor="@color/intro_title_color"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

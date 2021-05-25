@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/layout_margin_30"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="Customer Name"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="Babu Rao Apte"
+                android:textColor="@color/grey">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_10"
+        android:layout_marginTop="@dimen/layout_margin_10"
+        android:layout_marginRight="@dimen/layout_margin_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/notoserif_regular"
+            android:text="Vehicle Number"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/notoserif_regular"
+            android:text="UP - 32/1800"
+            android:textColor="@color/grey">
+
+        </TextView>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="Phone"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="966733XXXX"
+                android:textColor="@color/grey">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_baseline_call_24"
+                android:textColor="@color/grey">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="Address"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="Noida Sec - 62, Block A-30, Near by Indian Petrol"
+                android:textColor="@color/grey">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="Workshop Name"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="Raaj Auto Mobile Service Center, Noida sec - 63, Block B/110"
+                android:textColor="@color/grey">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="Time"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="00:00:00"
+                android:textColor="@color/grey">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin_10"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginTop="@dimen/layout_margin_20"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_start"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="Start"
+                android:textAllCaps="false"
+                android:textColor="@color/white">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@color/red"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/notoserif_regular"
+                android:text="Stop"
+                android:textAllCaps="false"
+                android:textColor="@color/white">
+
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

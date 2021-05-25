@@ -1,0 +1,884 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/liParent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbarcolor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/drawerimage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin_5"
+            android:layout_weight="0.3"
+            android:src="@drawable/ic_baseline_menu_24">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.4"
+            android:fontFamily="@font/notonserif_bold"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/layout_margin_20">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:layout_marginBottom="@dimen/layout_margin_10"
+                android:background="@drawable/switchedittextback"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvOff"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="@dimen/layout_margin_5"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|right"
+                    android:text="ON DUTY"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <Switch
+                    android:id="@+id/backgroundSwitch"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/layout_margin_5"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:maxHeight="10dp"
+                    android:switchMinWidth="56dp"
+                    android:theme="@style/SwitchTheme"
+                    android:thumbTextPadding="25dp">
+
+                </Switch>
+            </LinearLayout>
+            `
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imgaddCar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/layout_margin_5"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_baseline_notifications_24">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/liParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/liParent"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginTop="@dimen/layout_margin_5"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/liOurTask"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbackground"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:gravity="center"
+                        android:text="@string/Free_Awaiting_Task"
+                        android:textAlignment="center"
+                        android:textColor="@color/toolbarcolor">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/layout_margin_10"
+                    android:fontFamily="@font/notoserif_regular"
+                    android:gravity="center"
+                    android:text="Location updated 38 sec ago"
+                    android:textColor="@color/grey">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_30"
+                android:layout_marginBottom="@dimen/layout_margin_10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/liOnTimePerformance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:background="@drawable/verificationpagebackgroud"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/perfomance">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="100.0"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="On-Time \nPerformance"
+                        android:textColor="@color/black"
+                        android:textSize="12dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liCashInHand"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:background="@drawable/verificationpagebackgroud"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/customer_cash">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="Rs.  10400"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="@string/Cash_in_Hand"
+                        android:textColor="@color/black"
+                        android:textSize="12dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liRemainingFile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:background="@drawable/verificationpagebackgroud"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/iconsnew">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="02"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="File remaining \nfor upload"
+                        android:textColor="@color/black"
+                        android:textSize="12dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_5"
+                android:layout_marginBottom="@dimen/layout_margin_10"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/liOnTimeTask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:background="@drawable/verificationpagebackgroud"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/task">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="52"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="@string/On_Time_Task"
+                        android:textColor="@color/black"
+                        android:textSize="12dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liCanceltask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:background="@drawable/verificationpagebackgroud"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/task">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="@color/textColor"
+
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="@string/Cancel_Task"
+                        android:textColor="@color/black"
+                        android:textSize="12dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liTodayEarning"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:background="@drawable/verificationpagebackgroud"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/task">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="Rs. 402"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="Today's Tasks"
+                        android:textColor="@color/black"
+                        android:textSize="12dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_5"
+                android:layout_marginBottom="@dimen/layout_margin_10"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/liTodayMissedTask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:background="@drawable/verificationpagebackgroud"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/task">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="25"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="@string/Today_Missed"
+                        android:textColor="@color/black"
+                        android:textSize="12dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liMonthEarning"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:background="@drawable/verificationpagebackgroud"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/earning_task">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="Rs. 255"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="Month's earning"
+                        android:textColor="@color/black"
+                        android:textSize="12dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liMonthMissedTask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:background="@drawable/verificationpagebackgroud"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/task">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="40"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="Month's Missed Tasks"
+                        android:textColor="@color/black"
+                        android:textSize="12dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/liParents"
+                    android:layout_width="0dp"
+                    android:layout_height="230dp"
+                    android:layout_weight="1.6"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/header_cover_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/profile"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/header_cover_image"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/layout_margin_25"
+                            android:layout_marginTop="-60dp"
+                            android:background="@color/toolbarcolor"
+                            android:clickable="true"
+                            android:elevation="5dp"
+                            android:paddingLeft="@dimen/layout_margin_5"
+                            android:paddingRight="@dimen/layout_margin_5"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/goal" />
+
+                        <RelativeLayout
+                            android:id="@+id/profile_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/header_cover_image"
+                            android:layout_marginLeft="@dimen/layout_margin_10"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="@dimen/layout_margin_10"
+                            android:elevation="4dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/homebackground">
+
+                                <TextView
+                                    android:id="@+id/goasl"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginTop="@dimen/layout_margin_10"
+                                    android:fontFamily="@font/notoserif_regular"
+                                    android:paddingLeft="@dimen/layout_margin_5"
+                                    android:text="Goals Running!"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/layout_margin_15">
+
+                                </TextView>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/goasl"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/layout_margin_30"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/notoserif_regular"
+                                        android:paddingLeft="12dp"
+                                        android:text="Daily Incentives"
+                                        android:textColor="@color/toolbarcolor"
+                                        android:textSize="12dp">
+
+                                    </TextView>
+
+                                    <SeekBar
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:max="10"
+                                        android:outlineSpotShadowColor="@color/toolbarcolor"
+                                        android:progress="7"
+                                        android:thumbTint="@android:color/transparent">
+
+                                    </SeekBar>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/notoserif_regular"
+                                        android:paddingLeft="12dp"
+                                        android:text="Consistency through the week"
+                                        android:textColor="@color/toolbarcolor"
+                                        android:textSize="12dp">
+
+                                    </TextView>
+
+                                    <SeekBar
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:max="10"
+                                        android:outlineSpotShadowColor="@color/gray"
+                                        android:progress="5"
+                                        android:thumbTint="@android:color/transparent">
+
+                                    </SeekBar>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/notoserif_regular"
+                                        android:paddingLeft="12dp"
+                                        android:text="On time login consistency"
+                                        android:textColor="@color/toolbarcolor"
+                                        android:textSize="12dp">
+
+                                    </TextView>
+
+                                    <SeekBar
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:max="10"
+                                        android:outlineSpotShadowColor="@color/gray"
+                                        android:progress="2"
+                                        android:thumbTint="@android:color/transparent">
+
+                                    </SeekBar>
+
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/subliParents"
+                    android:layout_width="0dp"
+                    android:layout_height="230dp"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/layouts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/header_cover_images"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/profiles"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/header_cover_images"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/layout_margin_25"
+                            android:layout_marginTop="-60dp"
+                            android:background="@color/toolbarcolor"
+                            android:clickable="true"
+                            android:elevation="5dp"
+                            android:paddingLeft="@dimen/layout_margin_5"
+                            android:paddingRight="@dimen/layout_margin_5"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/earning_task" />
+
+                        <RelativeLayout
+                            android:id="@+id/profile_layouts"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/header_cover_images"
+                            android:layout_marginLeft="@dimen/layout_margin_10"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="@dimen/layout_margin_10"
+                            android:elevation="4dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/homebackground">
+
+                                <TextView
+                                    android:id="@+id/goasls"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="70dp"
+                                    android:layout_marginTop="@dimen/layout_margin_10"
+                                    android:fontFamily="@font/notoserif_regular"
+                                    android:paddingLeft="@dimen/layout_margin_5"
+                                    android:text="Month"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/layout_margin_15">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/goasls"
+                                    android:layout_marginTop="@dimen/layout_margin_10"
+                                    android:fontFamily="@font/notoserif_regular"
+                                    android:paddingLeft="12dp"
+                                    android:text="Earning &amp; Task"
+                                    android:textColor="@color/toolbarcolor"
+                                    android:textSize="12dp">
+
+                                </TextView>
+
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/thome">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ddhome"
+            android:title="@string/Home" />
+    </group>
+
+
+    <group android:id="@+id/t11">
+        <item
+            android:id="@+id/nav_goals"
+            android:icon="@drawable/goal"
+            android:title="@string/Goal" />
+    </group>
+    <group android:id="@+id/t15">
+        <item
+            android:id="@+id/nav_payout"
+            android:icon="@drawable/d_payout"
+            android:title="@string/Payout" />
+    </group>
+    <group android:id="@+id/t001">
+        <item
+            android:id="@+id/nav_performance"
+            android:icon="@drawable/perfomance"
+            android:title="@string/Performance" />
+    </group>
+    <group android:id="@+id/t10">
+        <item
+            android:id="@+id/nav_inhandcash"
+            android:icon="@drawable/customer_cash"
+            android:title="@string/Customer_Cash" />
+    </group>
+
+    <group android:id="@+id/t13">
+        <item
+            android:id="@+id/nav_taskHistory"
+            android:icon="@drawable/task"
+            android:title="@string/Task_History" />
+    </group>
+
+    <group android:id="@+id/t113">
+        <item
+            android:id="@+id/nav_attendence"
+            android:icon="@drawable/attendent"
+            android:title="@string/Attendance" />
+    </group>
+
+    <group android:id="@+id/t103">
+        <item
+            android:id="@+id/nav_acDeatails"
+            android:icon="@drawable/ac_details"
+            android:title="@string/Company_Details" />
+    </group>
+
+    <group android:id="@+id/t1013">
+        <item
+            android:id="@+id/nav_verificationDeatails"
+            android:icon="@drawable/verification"
+            android:title="@string/Verification_Details" />
+    </group>
+
+
+    <group android:id="@+id/t14">
+        <item
+            android:icon="@drawable/dsetting"
+            android:title="@string/Setting" />
+    </group>
+
+    <group android:id="@+id/t16">
+        <item
+            android:icon="@drawable/helps"
+            android:title="@string/Helps" />
+    </group>
+
+    <group android:id="@+id/t17">
+        <item
+            android:icon="@drawable/about"
+            android:title="@string/About_us" />
+    </group>
+
+    <group android:id="@+id/t18">
+        <item
+            android:icon="@drawable/privacy"
+            android:title="@string/Privacy_Policy" />
+    </group>
+
+    <group android:id="@+id/t181">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ddlogout"
+            android:title="@string/logout" />
+    </group>
+
+
+</menu>

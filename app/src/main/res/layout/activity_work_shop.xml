@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDEF"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_30"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_margin_10"
+                        android:layout_marginRight="@dimen/layout_margin_10"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_margin_10"
+                            android:layout_marginTop="@dimen/layout_margin_10"
+                            android:layout_marginRight="@dimen/layout_margin_10"
+                            android:fontFamily="@font/notoserif_regular"
+                            android:inputType="text"
+                            android:text="Workshop Person Name"
+                            android:textColor="@color/grey" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="@dimen/layout_margin_10"
+                            android:layout_marginTop="@dimen/layout_margin_10"
+                            android:layout_marginRight="@dimen/layout_margin_10"
+                            android:background="@drawable/expensebackground"
+                            android:digits=".0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                            android:fontFamily="@font/notoserif_regular"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_margin_10"
+                        android:layout_marginRight="@dimen/layout_margin_10"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_margin_10"
+                            android:layout_marginTop="@dimen/layout_margin_10"
+                            android:layout_marginRight="@dimen/layout_margin_10"
+                            android:fontFamily="@font/notoserif_regular"
+                            android:inputType="text"
+                            android:text="Phone Number"
+                            android:textColor="@color/grey" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="@dimen/layout_margin_10"
+                            android:layout_marginTop="@dimen/layout_margin_10"
+                            android:layout_marginRight="@dimen/layout_margin_10"
+                            android:background="@drawable/expensebackground"
+                            android:digits=".0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                            android:fontFamily="@font/notoserif_regular"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_margin_10"
+                        android:layout_marginRight="@dimen/layout_margin_10"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_margin_10"
+                            android:layout_marginTop="@dimen/layout_margin_10"
+                            android:layout_marginRight="@dimen/layout_margin_10"
+                            android:fontFamily="@font/notoserif_regular"
+                            android:inputType="text"
+                            android:text="Workshop Person Signature"
+                            android:textColor="@color/grey" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_marginLeft="@dimen/layout_margin_10"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:layout_marginRight="@dimen/layout_margin_10"
+                                android:background="@drawable/expensebackground"
+                               />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="tap here for take digital signature"
+                                android:layout_centerInParent="true">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:layout_marginLeft="@dimen/layout_margin_20"
+                        android:layout_marginRight="@dimen/layout_margin_20"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/expensebackground">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:src="@drawable/cameraimogo"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/layout_margin_15"
+                                android:layout_height="40dp"></ImageView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:layout_marginLeft="@dimen/layout_margin_10"
+                                android:text=" Take Photo"
+                                android:layout_marginRight="@dimen/layout_margin_10"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/black"
+                                />
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="@dimen/layout_margin_10"
+                            android:visibility="gone"
+                            android:background="@drawable/expensebackground"/>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnRegistration"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="@dimen/layout_margin_15"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="@dimen/layout_margin_10"
+                        android:background="@drawable/buttonbackground"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:gravity="center"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

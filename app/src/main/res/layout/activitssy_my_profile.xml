@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/header_cover_image"
+            android:background="@color/toolbarcolor"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="@dimen/layout_margin_25"
+            android:layout_marginTop="-60dp"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:scaleType="center"
+            android:src="@drawable/goal_icon" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginTop="-50dp"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:elevation="4dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/homebackground"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:id="@+id/goasl"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:paddingLeft="@dimen/layout_margin_5"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:text="Month"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+                    <TextView
+                        android:layout_below="@id/goasl"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/toolbarcolor"
+                        android:text="Earning &amp; Task">
+
+                    </TextView>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

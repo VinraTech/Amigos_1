@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Views.MonthEarningActivity">
+    <LinearLayout
+        android:id="@+id/liParent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbarcolor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/menuImage"
+            android:layout_marginLeft="@dimen/layout_margin_15"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/notonserif_bold"
+            android:gravity="center"
+            android:paddingRight="@dimen/layout_margin_30"
+            android:text="Payout"
+            android:textColor="@color/white"
+            android:textSize="@dimen/layout_margin_20">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:layout_marginBottom="@dimen/layout_margin_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dpayout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/liNewPayout"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="New Payout Highlights"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/layout_margin_20">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/liNewPayout1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="New Payout Highlights"
+                            android:fontFamily="@font/notonserif_bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_margin_20">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="Cancelled Task Count"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0.5 Task added for daily and weekly task bonus"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="match_parent"
+                            android:text="RS 0"
+                            android:fontFamily="@font/notonserif_bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_margin_20">
+
+                        </TextView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="@dimen/layout_margin_5"
+                        android:layout_marginBottom="@dimen/layout_margin_5"
+                        android:background="@color/lightgray">
+
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="Double Distance Servicing"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Location to customer or Customer to Servie Center 25KM"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="match_parent"
+                            android:text="RS 0"
+                            android:fontFamily="@font/notonserif_bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_margin_20">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="@dimen/layout_margin_5"
+                        android:layout_marginBottom="@dimen/layout_margin_5"
+                        android:background="@color/lightgray">
+
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="Daily Incentive 4 tasks"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="For more than 4 tasks"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="match_parent"
+                            android:text="RS 50"
+                            android:fontFamily="@font/notonserif_bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_margin_20">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="@dimen/layout_margin_5"
+                    android:layout_marginBottom="@dimen/layout_margin_5"
+                    android:background="@color/lightgray">
+
+                </View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/liBasePayout"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="Base Payout"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/layout_margin_20">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/liBasePayout1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Base Payout"
+                            android:fontFamily="@font/notonserif_bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_margin_20">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="On time performance "
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Reach designated location before ETA"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Per Task"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="RS 85"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="@dimen/layout_margin_5"
+                        android:layout_marginBottom="@dimen/layout_margin_5"
+                        android:background="@color/lightgray">
+
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="Off time performance"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Delayed"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Per Task"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="RS 59"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="@dimen/layout_margin_5"
+                        android:layout_marginBottom="@dimen/layout_margin_5"
+                        android:background="@color/lightgray">
+
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="Cancelled task - on Time"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pressed stop task at the customer location"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Per Task"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="RS 42"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="@dimen/layout_margin_5"
+                    android:layout_marginBottom="@dimen/layout_margin_5"
+                    android:background="@color/lightgray">
+
+                </View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/liIncentive"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="Incentive"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/layout_margin_20">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/liIncentive1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Incentive"
+                            android:fontFamily="@font/notonserif_bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_margin_20">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="Moring Task Incentive"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="@dimen/layout_margin_10"
+                                android:layout_height="wrap_content"
+                                android:text="Reach the customer's place before 8:20:00am and earn early incentive"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Daily"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="RS 125"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="@dimen/layout_margin_5"
+                        android:layout_marginBottom="@dimen/layout_margin_5"
+                        android:background="@color/lightgray">
+
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="Late Night Task Incentive"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/layout_margin_10"
+                                android:text="Complete a task post 9:00:00pm and before ETA to be eligible for incentive"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Daily"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="RS 100"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="@dimen/layout_margin_5"
+                        android:layout_marginBottom="@dimen/layout_margin_5"
+                        android:background="@color/lightgray">
+
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="4 or more task per days"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/layout_margin_10"
+                                android:text="If you complete at least 4 taska for the day. (Task for a distance more than 25Kms is counted as 2 tasks.)"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Daily"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="RS 50"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="@dimen/layout_margin_5"
+                    android:layout_marginBottom="@dimen/layout_margin_5"
+                    android:background="@color/lightgray">
+
+                </View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="visible"
+                    android:id="@+id/liDeduction"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="Deduction"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/layout_margin_20">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/liDeduction1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Deduction"
+                            android:fontFamily="@font/notonserif_bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_margin_20">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="Missed Task "
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="@dimen/layout_margin_10"
+                                android:layout_height="wrap_content"
+                                android:text="More than 1 per days"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Daily"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="RS 50"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="@dimen/layout_margin_5"
+                        android:layout_marginBottom="@dimen/layout_margin_5"
+                        android:background="@color/lightgray">
+
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="Remove Dual"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/layout_margin_10"
+                                android:text="Controlled by Support"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Daily"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="RS 200"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="@dimen/layout_margin_5"
+                    android:layout_marginBottom="@dimen/layout_margin_5"
+                    android:background="@color/lightgray">
+
+                </View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="visible"
+                    android:id="@+id/liRefundable"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="Refundable Security Deposit"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/layout_margin_20">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/liRefundable1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Refundable Security Deposit"
+                            android:fontFamily="@font/notonserif_bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_margin_20">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_margin_10"
+                                android:text="Refundable Security\n Deposit"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:textSize="17dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="@dimen/layout_margin_10"
+                                android:layout_height="wrap_content"
+                                android:text="For the new joinees, security amount would be deducted from the first and second month slary"
+                                android:fontFamily="@font/notoserif_regular"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="0.02"
+                            android:background="@color/colorAccent"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="On Time"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="RS 3000"
+                                android:fontFamily="@font/notonserif_bold"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/layout_margin_20">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

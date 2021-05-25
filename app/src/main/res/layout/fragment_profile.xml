@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitXY"
+            android:src="@drawable/person"
+            app:srcCompat="@drawable/person" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+           android:layout_alignParentRight="true"
+            android:id="@+id/imgEdit"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:layout_marginRight="@dimen/layout_margin_20"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_edit_24">
+
+        </ImageView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-135dp"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profilephoto"
+            app:civ_border_color="#FFFFFFFF"
+            app:civ_border_width="3dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_marginTop="-40dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/notoserif_regular"
+                    android:text="Raaj Singh"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/layout_margin_15" />
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:layout_marginBottom="@dimen/layout_margin_10"
+            android:id="@+id/viewid"
+            android:background="@color/grey">
+
+        </View>
+
+
+        <RelativeLayout
+            android:id="@+id/custom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/viewid"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:elevation="4dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/layout_margin_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_margin_10"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:layout_marginRight="@dimen/layout_margin_10"
+                        android:layout_marginBottom="@dimen/layout_margin_10"
+                        android:src="@drawable/ic_baseline_email_24">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:text="Email Address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15" />
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:text="sds@gmail.com"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/customthird_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custom_layout"
+
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:elevation="4dp"
+            android:minHeight="70dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/layout_margin_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_margin_10"
+                        android:layout_marginTop="@dimen/layout_margin_5"
+                        android:layout_marginRight="@dimen/layout_margin_10"
+                        android:src="@drawable/ic_baseline_contact_phone_24">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:text="Mobile"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15" />
+
+                    <TextView
+                        android:id="@+id/tvMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:text="9687548542"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/customfour_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/customthird_layout"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_marginRight="@dimen/layout_margin_10"
+            android:elevation="4dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/layout_margin_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_margin_10"
+                        android:layout_marginTop="@dimen/layout_margin_10"
+                        android:layout_marginRight="@dimen/layout_margin_10"
+                        android:layout_marginBottom="@dimen/layout_margin_10"
+                        android:src="@drawable/ic_baseline_location_on_24">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserif_regular"
+                        android:text="Noida sector 62"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

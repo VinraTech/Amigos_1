@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/thome">
+    <item
+        android:icon="@drawable/home_big"
+        android:title="@string/Home"
+        android:id="@+id/nav_home"/>
+    </group>
+
+
+
+    <group android:id="@+id/t001">
+        <item
+            android:icon="@drawable/offer_big"
+            android:title="@string/Offer" />
+    </group>
+
+    <group android:id="@+id/t0012">
+        <item
+            android:id="@+id/nav_vehicle"
+            android:icon="@drawable/pickanddrop"
+            android:title="@string/ViewVehicle" />
+    </group>
+
+    <group android:id="@+id/t00112">
+        <item
+            android:id="@+id/nav_changePassword"
+            android:icon="@drawable/pickanddrop"
+            android:title="@string/ChangePassword" />
+    </group>
+
+
+
+    <group android:id="@+id/t11">
+        <item
+            android:icon="@drawable/setting_big"
+            android:title="@string/Setting" />
+    </group>
+    <group android:id="@+id/t10">
+        <item
+            android:icon="@drawable/help_24"
+            android:title="@string/Help" />
+    </group>
+
+    <group android:id="@+id/t13">
+        <item
+            android:icon="@drawable/contact_big"
+            android:title="@string/Contact" />
+    </group>
+
+    <item
+        android:icon="@drawable/terms_big"
+        android:title="@string/terms" />
+
+    <item
+        android:icon="@drawable/logout_big"
+        android:id="@+id/uLogout"
+        android:title="@string/Logout"/>
+
+</menu>

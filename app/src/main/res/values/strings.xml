@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Amigos</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="facebook_app_id">907454420095137</string>
+    <string name="fb_login_protocol_scheme">fb907454420095137</string>
+    <string name="forgotpassword"><u>Forgot Password?</u></string>
+    <string name="newuser"><u>New user? click here for Sign Up</u></string>
+    <string name="login"><u>Click here to Login</u></string>
+    <string name="logout">LogOut</string>
+    <string name="terms"><u>Terms  &amp;  Condition and Privacy Policy</u></string>
+    <string name="pick">Pick &amp; drop</string>
+    <string name="inventry">Inventory Movement</string>
+    <string name="digital">Digital Road Side Assistance</string>
+    <string name="vehicle">New vehicle home delivery</string>
+    <string name="test">Test drive module</string>
+    <string name="NEWS_CHANNEL_ID">Amigos</string>
+    <string name="Home">Home</string>
+    <string name="Offer">Offers</string>
+    <string name="ViewVehicle">View Vehicles</string>
+    <string name="ChangePassword">Change Password</string>
+    <string name="Setting">Setting</string>
+    <string name="Help">Help 24*7</string>
+    <string name="Contact">Contact Us</string>
+    <string name="TermsandCondition">Contact Us</string>
+    <string name="Logout">LogOut</string>
+    <string name="Goal">Goal</string>
+    <string name="Payout">Payout</string>
+    <string name="Performance">Performance</string>
+    <string name="Customer_Cash">Customer Cash</string>
+    <string name="Task_History">Task History</string>
+    <string name="Attendance">Attendance</string>
+    <string name="Company_Details">Company A/C Details</string>
+    <string name="Verification_Details">Verification Details</string>
+    <string name="Helps">Help</string>
+    <string name="About_us">About Us</string>
+    <string name="Privacy_Policy">Privacy Policy</string>
+    <string name="Our_Service">Our Services</string>
+    <string name="Other_Service">Other Service</string>
+    <string name="Ontime_performance">On-Time Performance</string>
+    <string name="Cash_in_Hand">Cash in Hand</string>
+    <string name="File_remaining">File remaining for upload</string>
+    <string name="On_Time_Task">On-time task</string>
+    <string name="Cancel_Task">Cancel task</string>
+    <string name="Today_Missed">Today Missed Tasks</string>
+    <string name="Free_Awaiting_Task">FREE - AWAITING TASK</string>
+    <string name="Shower">Shower</string>
+    <string name="Charger">Charger</string>
+    <string name="Power_Bank">Power Bank</string>
+    <string name="Uniform">Uniform</string>
+    <string name="Back_Pack">Back Pack</string>
+    <string name="Swiping_Machine">Swiping Machine</string>
+    <string name="ID_Card">ID Card</string>
+    <string name="Body_Temperature">Body Temperature</string>
+    <string name="Verification">Verification</string>
+    <string name="Update_Profile">Update Profile</string>
+    <string name="Goals">Goals</string>
+    <string name="Payouts">Payout</string>
+    <string name="Month_Missed_Task">Month Missed Task</string>
+    <string name="Bank_Details">Bank Details</string>
+    <string name="Reports">Reports</string>
+    <string name="Servicing_Pickup">Servicing - Pickup</string>
+    <string name="Servicing_Drop">Servicing - Drop</string>
+    <string name="Registration">Registration</string>
+
+
+    <string-array name="Fuel">
+        <item>Petrol</item>
+        <item>Diesel</item>
+        <item>CNG Gas</item>
+    </string-array>
+
+
+    <string-array name="servives">
+        <item>Pick</item>
+        <item>Drop</item>
+        <item>Pick &amp; Drop </item>
+    </string-array>
+
+
+</resources>

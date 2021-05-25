@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginLeft="@dimen/layout_margin_20"
+    android:layout_marginTop="@dimen/layout_margin_20"
+    android:layout_marginRight="@dimen/layout_margin_20"
+    android:layout_marginBottom="@dimen/layout_margin_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="0dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:fontFamily="@font/notoserif_regular"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="@dimen/layout_margin_10"
+                    android:text="Your Vehicle">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/firstid"
+                    android:background="@color/tab_indicator_gray"
+                    android:layout_margin="@dimen/layout_margin_10"
+                    android:layout_marginBottom="@dimen/layout_margin_10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Authorised"
+                        android:src="@drawable/honda"
+                        android:clickable="true"
+                        android:fontFamily="@font/notoserif_regular">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Honda"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/notoserif_regular">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="HND414"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_gravity="right|center_vertical"
+                        android:fontFamily="@font/notoserif_regular">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/tab_indicator_gray"
+                    android:layout_margin="@dimen/layout_margin_10"
+                    android:layout_marginTop="@dimen/layout_margin_5"
+                    android:layout_marginBottom="@dimen/layout_margin_10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="Authorised"
+                        android:src="@drawable/bmw">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Ford"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/notoserif_regular">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="FRD788"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_gravity="right|center_vertical"
+                        android:fontFamily="@font/notoserif_regular">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/tab_indicator_gray"
+                    android:layout_margin="@dimen/layout_margin_10"
+                    android:layout_marginTop="@dimen/layout_margin_5"
+                    android:layout_marginBottom="@dimen/layout_margin_10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Authorised"
+                        android:src="@drawable/scoda"
+                        android:clickable="true"
+                        android:fontFamily="@font/notoserif_regular">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="BMW"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/notoserif_regular">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="BM4"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_gravity="right|center_vertical"
+                        android:fontFamily="@font/notoserif_regular">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</LinearLayout>

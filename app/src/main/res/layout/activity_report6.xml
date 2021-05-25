@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/amigonewbackground_car1"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/liParent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbarcolor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/menuImage"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_15"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:visibility="gone">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/notonserif_bold"
+            android:gravity="center"
+            android:paddingRight="@dimen/layout_margin_30"
+            android:text="@string/Verification"
+            android:textColor="@color/white"
+            android:textSize="@dimen/layout_margin_20">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/liParent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/liParent"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/liOnTimePerformance"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/layout_margin_10"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/verificationpagebackgroud"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/iconsnew">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_20"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:paddingLeft="@dimen/layout_margin_5"
+                        android:text="@string/Shower"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/chShower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:maxHeight="10dp"
+                        android:switchMinWidth="66dp"
+                        android:thumbTextPadding="25dp">
+
+                    </Switch>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/layout_margin_10"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/verificationpagebackgroud"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/iconsnew">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:paddingLeft="@dimen/layout_margin_5"
+                        android:text="@string/Charger"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/chCharger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:checked="false"
+                        android:maxHeight="10dp"
+                        android:switchMinWidth="66dp"
+                        android:thumbTextPadding="25dp">
+
+                    </Switch>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/layout_margin_10"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/verificationpagebackgroud"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/iconsnew">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:paddingLeft="@dimen/layout_margin_5"
+                        android:text="@string/Power_Bank"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/chPowerBank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:maxHeight="10dp"
+                        android:switchMinWidth="66dp"
+                        android:thumbTextPadding="25dp">
+
+                    </Switch>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/layout_margin_10"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/verificationpagebackgroud"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/iconsnew">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:paddingLeft="@dimen/layout_margin_5"
+                        android:text="@string/Uniform"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/chUniform"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:maxHeight="10dp"
+                        android:switchMinWidth="66dp"
+                        android:thumbTextPadding="25dp">
+
+                    </Switch>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/layout_margin_10"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/verificationpagebackgroud"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/iconsnew">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:paddingLeft="@dimen/layout_margin_5"
+                        android:text="@string/Back_Pack"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/chBagPack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:maxHeight="10dp"
+                        android:switchMinWidth="66dp"
+                        android:thumbTextPadding="25dp">
+
+                    </Switch>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/layout_margin_10"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/verificationpagebackgroud"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/iconsnew">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:paddingLeft="@dimen/layout_margin_5"
+                        android:text="@string/Swiping_Machine"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/chSwippingMachine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:maxHeight="10dp"
+                        android:switchMinWidth="66dp"
+                        android:thumbTextPadding="25dp">
+
+                    </Switch>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/layout_margin_10"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/verificationpagebackgroud"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/iconsnew">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:paddingLeft="@dimen/layout_margin_5"
+                        android:text="@string/ID_Card"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/chIdCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:maxHeight="10dp"
+                        android:switchMinWidth="66dp"
+                        android:thumbTextPadding="25dp">
+
+                    </Switch>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/layout_margin_10"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/verificationpagebackgroud"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/iconsnew">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:paddingLeft="@dimen/layout_margin_5"
+                        android:text="@string/Body_Temperature"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_margin_15">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:elevation="@dimen/layout_margin_5"
+                        app:cardCornerRadius="@dimen/layout_margin_10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/etTemp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:hint="0.00F"
+                                android:textColor="@color/black">
+
+                            </EditText>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imguser"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="@dimen/layout_margin_10"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:scaleType="fitXY"
+                android:src="@drawable/amigoback"
+                android:visibility="gone">
+
+            </ImageView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/liVerification"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/liTakeSelfi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/selfienew">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Take Selfie"
+                android:textColor="@color/white"></TextView>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/submitDetails"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_margin_10"
+            android:layout_weight="1"
+            android:background="@color/toolbarcolor"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:src="@drawable/submit_icon">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Submit Details"
+                android:textColor="@color/white"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

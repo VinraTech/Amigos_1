@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/liParent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbarcolor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/menuImage"
+            android:layout_marginLeft="@dimen/layout_margin_15"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/notonserif_bold"
+            android:gravity="center"
+            android:paddingRight="@dimen/layout_margin_30"
+            android:text="@string/Servicing_Drop"
+            android:textColor="@color/white"
+            android:textSize="@dimen/layout_margin_20">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/layout_margin_10"
+        android:layout_marginTop="@dimen/layout_margin_10"
+        android:layout_marginRight="@dimen/layout_margin_10"
+        android:layout_marginBottom="@dimen/layout_margin_10"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/layout_margin_5"
+            android:elevation="@dimen/layout_margin_10"
+            app:cardCornerRadius="@dimen/layout_margin_5">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/layout_margin_5"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:text="Maruti"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/editetxtbackgroud"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/layout_margin_5"
+                    android:layout_marginBottom="@dimen/layout_margin_5"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/cameraimogo"
+                        android:layout_weight="1.0">
+
+                    </ImageView>
+                    <View
+                        android:layout_width="1dp"
+                        android:background="@color/black"
+                        android:layout_height="match_parent"></View>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="WEWE23"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Swift"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/layout_margin_5"
+            android:elevation="@dimen/layout_margin_10"
+            app:cardCornerRadius="@dimen/layout_margin_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/layout_margin_15"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Amount to be collected">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:paddingLeft="@dimen/layout_margin_15"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                  android:paddingRight="@dimen/layout_margin_20"
+                    android:layout_height="match_parent"
+                    android:text="Rs 0.0">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin_5"
+            android:elevation="@dimen/layout_margin_10"
+            app:cardCornerRadius="@dimen/layout_margin_5">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/liTicket"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="Ticket"
+                        android:fontFamily="@font/notonserif_bold"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/layout_margin_20">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/liTicket1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Ticket"
+                            android:fontFamily="@font/notonserif_bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/layout_margin_20">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="SMS Payment Link"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white">
+
+                            </androidx.appcompat.widget.AppCompatButton>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Cheque Payment"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white">
+
+                            </androidx.appcompat.widget.AppCompatButton>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAllCaps="false"
+                                android:text="Clear Online payment"
+                                android:textColor="@color/white">
+
+                            </androidx.appcompat.widget.AppCompatButton>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Approve Cash Payment"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white">
+
+                            </androidx.appcompat.widget.AppCompatButton>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/dpayout"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Customer Not Accepting Vehicle"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white">
+
+                            </androidx.appcompat.widget.AppCompatButton>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Payment done at SVC"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white">
+
+                            </androidx.appcompat.widget.AppCompatButton>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/dpayout"
+                        android:layout_marginBottom="@dimen/layout_margin_10"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Zero Bill Amount"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white">
+
+                            </androidx.appcompat.widget.AppCompatButton>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Wrong Amount"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white">
+
+                            </androidx.appcompat.widget.AppCompatButton>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:text="payment">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
